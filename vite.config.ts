@@ -8,4 +8,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [tsconfigPaths(), preloadPlugin(), ViteCSSExportPlugin(), optimizeCssModules(), react()],
+  server: {
+    port: 3000,
+  },
 })

@@ -1,0 +1,16 @@
+@use '../../theme.module' as theme;
+@use "sass:map";
+
+.textarea {
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  color: map.get(theme.$dark, 'text', 'default');
+}

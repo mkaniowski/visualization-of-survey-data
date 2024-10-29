@@ -49,7 +49,8 @@ export default [
     },
     rules: {
       ...js.configs.recommended.rules,
-      ...tseslint.configs.recommended.rules,
+      ...tseslint.configs.recommendedTypeChecked,
+      ...tseslint.configs.stylisticTypeChecked,
       ...sonarjs.configs.recommended.rules,
       ...depend.configs['flat/recommended'].rules,
       ...compat.configs['flat/recommended'].rules,

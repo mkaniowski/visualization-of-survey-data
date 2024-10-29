@@ -1,0 +1,14 @@
+@use '../../theme.module' as theme;
+@use "sass:map";
+
+.button {
+  background: theme.$linearPrimaryAccent;
+  background-size: 200% 200%;
+  color: map.get(theme.$dark, 'text', 'default');
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: filter 0.1s ease-in-out;
+}
