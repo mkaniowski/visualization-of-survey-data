@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion'
 
-import { Size } from '@/shared/model/common.ts'
-
 import styles from './button.module.scss'
 
 export interface IButton {
@@ -9,7 +7,6 @@ export interface IButton {
   onClick?: () => void
   type?: 'button' | 'submit' | 'reset'
   color?: 'primary' | 'secondary'
-  size?: Size
   isDisabled?: boolean
 }
 
@@ -18,12 +15,11 @@ export const Button = ({
   onClick,
   type = 'button',
   color = 'primary',
-  size = 'md',
   isDisabled = false,
 }: IButton) => {
   return (
     <motion.button
-      className={`${styles.button} ${styles[color]} ${styles[size]}`}
+      className={`${styles.button} ${styles[color]}`}
       onClick={onClick}
       disabled={isDisabled}
       type={type}

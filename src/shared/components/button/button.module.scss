@@ -5,10 +5,13 @@
   background: theme.$linearPrimaryAccent;
   background-size: 200% 200%;
   color: map.get(theme.$dark, 'text', 'default');
-  padding: 10px 20px;
+  padding: 12px 36px;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
   border: none;
   transition: filter 0.1s ease-in-out;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: theme.$shadowBox;
 }
