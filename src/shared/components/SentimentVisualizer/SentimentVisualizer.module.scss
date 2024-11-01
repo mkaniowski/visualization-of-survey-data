@@ -1,0 +1,23 @@
+@use '../../theme.module' as theme;
+@use "sass:map";
+
+.wrapper {
+  display: flex;
+  height: calc(100% - 0px);
+  width: 600px;
+  flex-direction: column;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  padding-left: 30%;
+  padding-right: 21.5%;
+
+  > span {
+    font-size: 2rem;
+    color: map.get(theme.$dark, 'text', 'default');
+  }
+}

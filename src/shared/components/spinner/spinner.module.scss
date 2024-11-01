@@ -1,0 +1,19 @@
+@use '../../theme.module' as theme;
+@use "sass:map";
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.loader-before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid map.get(theme.$dark, 'primary', 'default');
+}
+

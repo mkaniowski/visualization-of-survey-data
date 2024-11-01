@@ -24,7 +24,7 @@ export default [
     languageOptions: {
       parser: tsParser,
       sourceType: 'module',
-      globals: globals.browser,
+      globals: { ...globals.browser, ...globals.node, ...globals.es2021 },
       parserOptions: {
         project: ['./tsconfig.json', './tsconfig.app.json', './tsconfig.node.json'],
         tsconfigRootDir: __dirname,
@@ -62,7 +62,7 @@ export default [
       'simple-import-sort/imports': 'warn',
       'simple-import-sort/exports': 'warn',
       'unicorn/prevent-abbreviations': 'warn',
-      'unicorn/filename-case': 'warn',
+      'unicorn/filename-case': 'off',
     },
   },
 ]

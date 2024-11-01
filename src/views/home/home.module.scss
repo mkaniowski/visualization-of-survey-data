@@ -9,13 +9,32 @@
   height: 100vh;
   width: 100vw;
   flex-direction: column;
-  row-gap: 12px;
 
-  h1 {
+  > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  > h1 {
     color: map.get(theme.$dark, 'text', 'default');
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 0.1rem;
     text-shadow: 0 0 6px color.adjust(map.get(theme.$dark, 'text', 'default'), $alpha: -0.8);
   }
+
+  > div {
+    margin-top: 48px;
+  }
+}
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 622px;
 }

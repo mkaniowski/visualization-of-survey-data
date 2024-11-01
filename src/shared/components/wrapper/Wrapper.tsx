@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { Background, BackgroundType } from '@/shared/components/background/background.tsx'
+import { Background, BackgroundType } from '@/shared/components/background/Background.tsx'
 
 import styles from './wrapper.module.scss'
 
